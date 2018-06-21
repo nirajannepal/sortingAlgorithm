@@ -6,7 +6,7 @@ public class QuickSort {
 
     private void sort(int[] mainArray, int lo, int hi) {
         if(hi<=lo) return;
-        int mid = partition(mainArray,0,hi);
+        int mid = partition(mainArray,lo,hi);
         sort(mainArray,lo,mid-1);
         sort(mainArray,mid+1,hi);
     }
